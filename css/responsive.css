@@ -1,21 +1,23 @@
 /*MEDIA QUERIES PARA DISPOSITIVOS MOVEIS*/
 
-@media(max-width: 999px) {
+@media(max-width: 426px) {
     /*CSS NAVE BAR MOBILE*/
-    body {
+
+    body{
         overflow-x: hidden;
     }
     .menu-hamburger div {
-        z-index: 999;
+        z-index: 1;
         display: block;
         transition: 0.5s ease-in;
     }
     .nav-list {
+        
         position: absolute;
         top: 0;
         right: 0;
         height: 100vh;
-        width: 50vw;
+        width:100vw;
         background: #fde74c;
         flex-direction: column;
         align-items: center;
@@ -58,5 +60,27 @@
         border-radius: 10px;
         top: 100%;
         transform: rotate(-220deg);
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .box{
+        text-align: center;
+    }
+
+    nav{
+      background-color: transparent;
+      position: static;
+    }
+
+}
+
+@media(max-width: 768px){
+    img{
+        width: 250px;
+        height: 250px;
+     
     }
 }
