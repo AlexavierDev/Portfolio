@@ -10,46 +10,76 @@
     <link rel="stylesheet" href="css/responsive.css">
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/c58009e6eb.js" crossorigin="anonymous"></script>
-
-    <title>Portfolio | Alex Xavier Front-end Developer</title>
+    <title>Portfolio | Alex Xavier</title>
 </head>
 
 <body>
+
     <header>
-        <nav>
-          <div class="logo"></div>
-            <input type="checkbox" id="checkbox">
-
-            <label for="checkbox" id="btnCheck">
-                <div class="menu-hamburger">
-                    <div class="linha1"></div>
-                    <div class="linha2"></div>
-                    <div class="linha3"></div>
-                </div>
-            </label>
-
-            <ul id="nav-list" class="nav-list">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
+        <div class="logo"></div>
+        <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+            <i id="btnMenu" class="fa fa-bars"></i>
+        </a>
+        <nav class="nav-links" id="nav">
+            <ul>
+                <li><a class="nav-item" onclick="removeBlur()" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-item" onclick="removeBlur()" href="#">Contato</a></li>
+                <li><a class="nav-item" onclick="removeBlur()" href="#">Sobre</a></li>
             </ul>
         </nav>
     </header>
-     
+
     <main>
         <div class="container">
             <div class="box">
                 <p>Olá,Me Chamo</p>
                 <h1>Alex Xavier</h1>
                 <h2>Front-end Developer</h2>
-                <a class="btnSocial" target="_blank" href="https://github.com/AlexavierDev">Github <i class="fa-brands fa-github"></i></a>
-                <a class="btnSocial" target="_blank" href="https://www.linkedin.com/in/alexsandroxavier/">Linkedin <i class="fa-brands fa-linkedin"></i></a>
-    
+                <a class="btnSocial" target="_blank" href="https://github.com/AlexavierDev">Github <i
+                        class="fa-brands fa-github"></i></a>
+                <a class="btnSocial" target="_blank" href="https://www.linkedin.com/in/alexsandroxavier/">Linkedin <i
+                        class="fa-brands fa-linkedin"></i></a>
+
             </div>
             <img src="media/tech02semFundo.png " alt="">
-            
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="portfolio" class="portfolio">
+            <h1>Projetos</h1>
+            <div class="projectCards">
+                <div class="cardItem">
+                    <div class="imageCard"></div>
+                    <div class="cardBody">
+                        <h1>Projeto 01</h1>
+                        <p>Breve descrição sobre o projeto</p>
+                        <a class="btnSocialCards btnSocial" href="#"><i class="fa-solid fa-link"></i> Visitar Site</a>
+                        <a class="btnSocialCards btnSocial" target="_blank"
+                            href="https://github.com/AlexavierDev">Github <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="cardItem">
+                    <div class="imageCard"></div>
+                    <div class="cardBody">
+                        <h1>Projeto 03</h1>
+                        <p>Breve descrição sobre o projeto</p>
+                        <a class="btnSocialCards btnSocial" href="#"><i class="fa-solid fa-link"></i> Visitar Site</a>
+                        <a class="btnSocialCards btnSocial" href="#"><i class="fa-brands fa-github"></i> Github</a>
+                    </div>
+                </div>
+
+                <div class="cardItem">
+                    <div class="imageCard"></div>
+                    <div class="cardBody">
+                        <h1>Projeto 03</h1>
+                        <p>Breve descrição sobre o projeto</p>
+                        <a class="btnSocialCards btnSocial" href="#"><i class="fa-solid fa-link"></i> Visitar Site</a>
+                        <a class="btnSocialCards btnSocial" href="#"><i class="fa-brands fa-github"></i> Github</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="btnVerMais btnSocial" href="#">Ver mais</a>
     </main>
 
 </body>
