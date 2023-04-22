@@ -2,10 +2,6 @@
 
 @media(max-width: 600px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-    }
 
     .fa-bars {
         cursor: pointer;
@@ -17,16 +13,15 @@
       }
 
     nav.nav-links {
-        display: flex;
+        display: none;
         position: absolute;
         z-index: 1;
         top: 0;
         right: 0;
         height: 100vh;
         width: 60%;
-        transform: translateX(200%);
         background-color: #0a192f;
-        transition: all 0.5s ease;
+        transition: all 5s ease;
         
     }
 
@@ -56,7 +51,7 @@
         width: 60%;
         transform: translateX(0);
         background-color: #0a192f;
-        transition: all 0.5s ease;
+        transition: all  5s ease;
 
     }
 

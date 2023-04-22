@@ -17,19 +17,21 @@
 
     <header>
         <div class="logo"></div>
+        <!-- BTN MENU MOBILE-->
         <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
             <i id="btnMenu" class="fa fa-bars"></i>
         </a>
         <nav class="nav-links" id="nav">
             <ul>
                 <li><a class="nav-item" onclick="removeBlur()" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-item" onclick="removeBlur()" href="#">Contato</a></li>
-                <li><a class="nav-item" onclick="removeBlur()" href="#">Sobre</a></li>
+                <li><a class="nav-item" onclick="removeBlur()" href="#contato">Contato</a></li>
+                <li><a class="nav-item" onclick="removeBlur()" href="#sobre">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- PRIMEIRA SEÇÃO -->
         <div class="container">
             <div class="box">
                 <p>Olá,Me Chamo</p>
@@ -43,8 +45,14 @@
             </div>
             <img src="media/tech02semFundo.png " alt="">
         </div>
+          
+
+
+
+        <!-- SEGUNDA SEÇÃO - PROJETOS CARDS -->
         <div id="portfolio" class="portfolio">
             <h1>Projetos</h1>
+
             <div class="projectCards">
                 <div class="cardItem">
                     <div class="imageCard"></div>
@@ -78,8 +86,10 @@
                 </div>
 
             </div>
+            <a class="btnVerMais btnSocial" href="#">Ver mais</a>   
+        </div>
 
-            <a class="btnVerMais btnSocial" href="#">Ver mais</a>
+       
     </main>
 
 </body>
